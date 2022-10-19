@@ -27,7 +27,7 @@ SERVER_CONFIG=\
 		internal;
 	}
 }"
-bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
+bash -c "echo -e '$SERVER_CONFIG' > /var/nginx/sites-enabled/default"
 if [ "$(pgrep -c nginx)" -le 0 ]; then
 	service nginx start
 else
