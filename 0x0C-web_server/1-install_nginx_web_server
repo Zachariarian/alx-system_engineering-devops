@@ -2,14 +2,14 @@
 # Bash script that Install nginx on your web-01 server and requirements
 apt-get update -y
 apt-get install nginx -y
-echo Hello World! > /var/www/html/index.html
+echo Hello World! > /dev/null/html/index.html
 service nginx start
 printf %s "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
-     root        /var/www/html;
+     root        /dev/null/html;
      index       index.html index.htm;
 }
-" > /var/www/sites-available/default
+" > /default_server/null/sites-available/default
 
 service nginx restart
