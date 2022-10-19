@@ -10,7 +10,7 @@ service nginx start
 sudo mkdir /var/www/html
 sudo touch /var/www/html/index.html
 
-echo 'Hello World!' > /dev/www/html/index.html
+echo 'Hello World!' > /var/www/html/index.html
 printf %s "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
