@@ -7,10 +7,10 @@ sudo apt-get upgrade -y
 sudo apt-get -y install nginx
 service nginx start
 
-sudo mkdir /var/nginx/html
-sudo touch /var/nginx/html/index.html
+sudo mkdir /var/www/html
+sudo touch /var/www/html/index.html
 
-echo 'Hello World!' > /var/nginx/html/index.html
+echo 'Hello World!' > /var/www/html/index.html
 printf %s "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
