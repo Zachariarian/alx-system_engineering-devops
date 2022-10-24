@@ -17,8 +17,8 @@ listen load_balancer
    balance roundrobin
    option httpclose
    option forwardfor
-   server 159-web-01 3.235.75.142:80 check
-   server 159-web-02 100.25.15.155:80 check
+   server 868-web-01 3.235.75.142:80 check
+   server 868-web-02 100.25.15.155:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
